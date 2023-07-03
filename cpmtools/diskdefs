@@ -1,0 +1,36 @@
+
+# NABU22s4  Nabu PC - SSDD 5.25", 40 TRK, 48 TPI
+diskdef nabu22s4
+  seclen 1024
+  tracks 40
+  sectrk 5
+  blocksize 1024
+  maxdir 96
+  skew 2
+  boottrk 2
+  os 2.2
+end
+
+# NABU22d8  Nabu PC - DSDD 5.25", 80 TRK, 48 TPI
+diskdef nabu22d8
+  seclen 1024
+  tracks 80
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 2
+  boottrk 2
+  os 2.2
+end
+
+# NABU22d16  Nabu PC - DSDD 3.5", 160 TRK, 96 TPI
+diskdef nabu22d16
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 192
+  skew 2
+  boottrk 2
+  os 2.2
+end
