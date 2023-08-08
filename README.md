@@ -25,14 +25,14 @@ This repository contains disk images and related configuration files that will e
 * The 'images' directory contains the CP/M boot disk and blank images
 * The 'flashfloppy' directory contains a configuration file suitable for a Gotek device running the [flashfloppy firmware](https://github.com/keirf/flashfloppy)
 * The 'cpmtools' directory contains the cpmtools utility disk definitions for the various image formats supported by this release of CP/M
-* The 'extras' directory contains a disk image with WordStar version 4, configured for the ADM-3A terminal
+* The 'extras' directory contains a disk image with WordStar version 4, configured for the ADM-3A terminal, and the Kermit Users Guide
 
  
 ## Prerequisites
 
 - A floppy disk controller is required. You can find an excellent replica of the original floppy controller [here](https://klyball.com/nabu-page).
 - A ROM that supports booting from floppy disks. Note that the standard ROM included with the NABU PC does *not* support booting from disk. An excellent alternative ROM that supports everything the original ROM does but with the added capability of booting from disks can be found [here](https://github.com/labomb/NABU_PC_Stuff/tree/master/ROM-version-14-patched).
-- A serial board (available at the same floppy controller link above) is optional. The serial board opens up support for attaching a true 80 column terminal if desired, support for xmodem file transfers to/from the NABU PC using the included transfer utilities, and much more.
+- A serial board (available at the same floppy controller link above) is optional. The serial board opens up support for attaching a true 80 column terminal if desired, support for xmodem file transfers to/from the NABU PC using the included transfer utilities, Kermit terminal emulation and file transfers, and much more.
 
  
 ## Documentation
