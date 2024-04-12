@@ -13,6 +13,7 @@ This repository contains disk images and related configuration files that will e
 * Serial option board support
 * Parallel port support
 * Virtual 80 column mode
+* Support for the F18A VGA video adapter (offers true 80 column support)
 * ADM-3a terminal emulation
 * Includes several customization utilities
 * Official patches provided by DRI have been applied
@@ -32,7 +33,7 @@ This repository contains disk images and related configuration files that will e
 
 - A floppy disk controller is required. You can find an excellent replica of the original floppy controller [here](https://klyball.com/nabu-page).
 - A ROM that supports booting from floppy disks. Note that the standard ROM included with the NABU PC does *not* support booting from disk. An excellent alternative ROM that supports everything the original ROM does but with the added capability of booting from disks can be found [here](https://github.com/labomb/NABU_PC_Stuff/tree/master/ROM-version-14-patched).
-- A serial board (available at the same floppy controller link above) is optional. The serial board opens up support for attaching a true 80 column terminal if desired, support for xmodem file transfers to/from the NABU PC using the included transfer utilities, Kermit terminal emulation and file transfers, and much more.
+- A serial board (available at the same floppy controller link above) is optional. The serial board opens up support for attaching an external terminal if desired, support for xmodem file transfers to/from the NABU PC using the included transfer utilities, Kermit terminal emulation and file transfers, and much more.
 
  
 ## Documentation
