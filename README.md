@@ -10,6 +10,7 @@ This repository contains disk images and related configuration files that will e
 	- 5.25" double-side, double-density, 80 track, 48 TPI
 	- 3.5" double-side, double-density, 160 track, 96 TPI
 * Dynamically re-configures for SSDD or DSDD disks on 5.25" drives
+* Bootable harddrive images for use with the mame
 * Serial option board support
 * Parallel port support
 * Virtual 80 column mode
@@ -23,9 +24,10 @@ This repository contains disk images and related configuration files that will e
  
 ## Directories
 
-* The 'images' directory contains the CP/M boot disk and blank images
+* The 'images' directory contains the CP/M floppy boot disk and blank images
 * The 'flashfloppy' directory contains a configuration file suitable for a Gotek device running the [flashfloppy firmware](https://github.com/keirf/flashfloppy)
 * The 'cpmtools' directory contains the cpmtools utility disk definitions for the various image formats supported by this release of CP/M
+* The 'mame_harddrive_images' directory contains bootable 24mb images (three 8mb drives) for use with the mame Nabu PC emulator
 * The 'extras' directory contains a disk image with WordStar version 4, configured for the ADM-3A terminal, and the Kermit Users Guide
 
  
