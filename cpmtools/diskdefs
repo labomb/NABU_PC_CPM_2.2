@@ -616,18 +616,15 @@ diskdef bw14
   os 2.2
 end
 
-diskdef nabu-hdf
-    seclen 1024
-    blocksize 2048
-    tracks 80
-    sectrk 5
-    skew 2
-    boottrk 1
-    maxdir 256
-    os 3
-end
+##################################
+#  Start labomb CP/M definitions 
+##################################
 
-# NABU22s4  Nabu PC - SSDD 5.25" 48 tpi - 1024 x 5
+#
+# Definitions for NABU CP/M 2.2 Floppy
+#
+
+# NABU22s4  Nabu PC - SSDD 5.25" 48 tpi
 diskdef nabu22s4
   seclen 1024
   tracks 40
@@ -639,7 +636,7 @@ diskdef nabu22s4
   os 2.2
 end
 
-# NABU22d8  Nabu PC - DSDD 5.25" 48 tpi - 1024 x 5
+# NABU22d8  Nabu PC - DSDD 5.25" 48 tpi
 diskdef nabu22d8
   seclen 1024
   tracks 80
@@ -651,7 +648,7 @@ diskdef nabu22d8
   os 2.2
 end
 
-# NABU22d16  Nabu PC - DSDD 3.5" 96 tpi - 1024 x 5
+# NABU22d16  Nabu PC - DSDD 3.5" 96 tpi
 diskdef nabu22d16
   seclen 1024
   tracks 160
@@ -663,7 +660,102 @@ diskdef nabu22d16
   os 2.2
 end
 
-# NABU22HDA  Nabu PC - HD A
+#
+# Definitions for NABU CP/M 3 Floppy
+#
+
+# NABU3s4  Nabu PC - SSDD 5.25" 48 tpi
+diskdef nabu3s4
+  seclen 1024
+  tracks 40
+  sectrk 5
+  blocksize 1024
+  maxdir 96
+  skew 2
+  boottrk 1
+  os 3
+end
+
+# NABU3d8  Nabu PC - DSDD 5.25" 48 tpi
+diskdef nabu3d8
+  seclen 1024
+  tracks 80
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 2
+  boottrk 1
+  os 3
+end
+
+# NABU3d16  Nabu PC - DSDD 3.5" 96 tpi
+diskdef nabu3d16
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 192
+  skew 2
+  boottrk 1
+  os 3
+end
+
+#
+# Definitions for NABU CP/M 2.2 CompactFlash
+#
+
+# NABU22CFA  Nabu PC - CompactFlash A
+diskdef nabu22cfa
+    seclen 512
+    tracks 1024
+    sectrk 16
+    blocksize 4096
+    maxdir 512
+    boottrk 2
+    os 2.2
+end
+
+# NABU22CFB  Nabu PC - CompactFlash B
+diskdef nabu22cfb
+    seclen 512
+    tracks 1024
+    sectrk 16
+    blocksize 4096
+    maxdir 512
+    boottrk 0
+    offset 1024t
+    os 2.2
+end
+
+# NABU22CFC  Nabu PC - CompactFlash C
+diskdef nabu22cfc
+    seclen 512
+    tracks 1024
+    sectrk 16
+    blocksize 4096
+    maxdir 512
+    boottrk 0
+    offset 2048t
+    os 2.2
+end
+
+# NABU22CFD  Nabu PC - CompactFlash D
+diskdef nabu22cfd
+    seclen 512
+    tracks 512
+    sectrk 16
+    blocksize 4096
+    maxdir 256
+    boottrk 0
+    offset 3072t
+    os 2.2
+end
+
+#
+# Definitions for NABU CP/M 2.2 mame hard drive
+#
+
+# NABU22HDA  Nabu PC - MAME Hard Drive A
 diskdef nabu22hda
     seclen 512
     tracks 1024
@@ -674,7 +766,7 @@ diskdef nabu22hda
     os 2.2
 end
 
-# NABU22HDB  Nabu PC - HD B
+# NABU22HDB  Nabu PC - MAME Hard Drive B
 diskdef nabu22hdb
     seclen 512
     tracks 1024
@@ -682,11 +774,11 @@ diskdef nabu22hdb
     blocksize 4096
     maxdir 512
     boottrk 0
-	offset 1024t
+    offset 1024t
     os 2.2
 end
 
-# NABU22HDC  Nabu PC - HD C
+# NABU22HDC  Nabu PC - MAME Hard Drive C
 diskdef nabu22hdc
     seclen 512
     tracks 1024
@@ -694,10 +786,38 @@ diskdef nabu22hdc
     blocksize 4096
     maxdir 512
     boottrk 0
-	offset 2048t
+    offset 2048t
     os 2.2
 end
 
+#
+# Definitions for the original NABU CP/M 3 hard drive
+#
+
+diskdef nabu-cpm3e
+    seclen 512
+    tracks 245
+    sectrk 64
+    blocksize 4096
+    maxdir 1024
+    boottrk 1
+    os 3
+end
+
+diskdef nabu-cpm3f
+    seclen 512
+    tracks 55
+    sectrk 64
+    blocksize 4096
+    maxdir 256
+    boottrk 0
+    offset 245t
+    os 3
+end
+
+##################################
+#  End labomb CP/M definitions 
+##################################
 
 # NAB1  Nabu PC - SSDD 5.25" 48 tpi - 1024 x 5
 diskdef nab1
@@ -752,6 +872,17 @@ diskdef nabu-hddf
     blocksize 4096
     maxdir 256
     boottrk 980
+    os 3
+end
+
+diskdef nabu-hdf
+    seclen 1024
+    blocksize 2048
+    tracks 80
+    sectrk 5
+    skew 2
+    boottrk 1
+    maxdir 256
     os 3
 end
 
