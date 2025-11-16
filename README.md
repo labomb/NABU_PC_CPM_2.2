@@ -29,7 +29,7 @@ This repository contains disk images and related configuration files that will e
 * The 'flashfloppy' directory contains a configuration file suitable for a Gotek device running the [flashfloppy firmware](https://github.com/keirf/flashfloppy)
 * The 'cpmtools' directory contains the cpmtools utility disk definitions for the various image formats supported by this release of CP/M
 * The 'mame_harddrive_images' directory contains bootable 24mb images (three 8mb drives) for use with the mame Nabu PC emulator
-* The 'extras' directory contains disk images with WordStar version 4 (both standard and column versions), configured for the ADM-3A terminal, and the Kermit Users Guide
+* The 'extras' directory contains disk images with WordStar version 4 (both standard and 80 column versions), configured for the ADM-3A terminal, and the Kermit Users Guide
 
  
 ## Prerequisites
