@@ -29,6 +29,7 @@ This repository contains disk images and related configuration files that will e
 	| nhrmdir | Remove a remote directory |
 	| nhmkdir | Create a remote directory |
 	| nhdate | Display the server's current date and time |
+	| nhwget | Get a file from a remote web site |
 
 	See the the [pdf file](https://github.com/labomb/NABU_PC_CPM_2.2/blob/master/NABU_CPM_2.2_Readme.pdf) for additional details.
 
